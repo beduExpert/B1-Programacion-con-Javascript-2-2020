@@ -1,4 +1,4 @@
-## Nombre del Módulo: React Fundamentals
+## Nombre del Módulo: Programacion con Javascript 2 2020
 
 ### OBJETIVO 
 
