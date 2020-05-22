@@ -12,17 +12,19 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
 
 ## Tabla de Contenidos
 
+- **[¿Qué es scope?](#qué-es-scope)**
+
 - **[Scope global](#scope-global)**
 
 - **[Scope local](#scope-local)**
+
+  - [Ejemplo 1: Sentencias de bloque](./Ejemplo-01)
 
 - **[Execution context](#execution-context)**
 
 - **[This](#this)**
 
-  - [Ejemplo 1: ](./Ejemplo-01)
-
-  - [Ejemplo 2: ](./Ejemplo-02)
+  - [Ejemplo 2: `this` como método](./Ejemplo-02)
 
   - [Ejemplo 3: ](./Ejemplo-03)
 
@@ -32,31 +34,99 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
 
 ---
 
+## ¿Qué es scope?
+
+Scope es la accesibilidad que tienen las variables, funciones y objetos en partes específicas del 
+código durante el tiempo de ejecución. En otras palabras, el scope determina la visibilidad de las 
+variables en áreas del código.
+
+JavaScript cuenta con dos tipos de scope: global y local. Las variables dentro de una función se 
+encuentran en un scope local, aquellas definidas fuera de una función están en un scope global.
+
+---
+
 ## Scope global
 
-Aquí el texto de scope global
+Al momento de empezar a escribir en un documento de JavaScript ya estás en un scope global y solamente 
+existe uno todo el documento. Todas las variables que estén definidas fuera de una función
+se encuentran en el scope global. Esto significa que se puede acceder a dichas variables e incluso 
+modificarlas desde cualquier otra parte del código, incluso dentro de una función.
+
+```javascript
+var name = "John Doe";
+
+console.log(name); // "John Doe"
+
+function foo() {
+  console.log(name); 
+}
+
+foo(); // "John Doe"
+```
 
 ---
 
 ## Scope local
 
-Aquí el texto de scope local
+Las variables definidas dentro de una función se encuentran en un scope local, esto significa que
+solo se puede acceder a ellas dentro de la función donde se definió la variable. Esto te permite tener
+variables con el mismo nombre en distintas funciones, cada una de esas variables estará ligada a su 
+respectiva función.
+
+```javascript
+function foo() {
+  var name = "John Doe";
+  console.log(name); 
+}
+
+foo(); // "John Doe"
+
+console.log(name); // Uncaught ReferenceError: name is not defined
+```
+
+Sentencias de control de flujo y bucles como `if/else`, `switch`, `for` o `while` no crean un nuevo
+scope como lo hacen las funciones. Cualquier variable declarada dentro de estos bloques tendrá el mismo 
+scope donde se declaró la sentencia.
+
+#### [Ejemplo 1: Sentencias de bloque](./Ejemplo-01)
 
 ---
 
 ## Execution context
 
-Aquí el texto de execution context
+El ambiente en el cual cada línea de código es ejecutada se conoce como Execution Context. Cada vez que se llama
+o ejecuta una nueva función, JavaScript crea un nuevo execution context, estos se van apilando en lo que se conoce
+como Execution Stack.
+
+![Execution Context](./assets/execution-context.png)
+
+Todas las variables y declaraciones de funciones por default forman parte del Global Execution Context, como es el caso
+de `name`, `first`, `second`, y `third`. Al momento de ejecutar `first()` se crea un nuevo execution context encima 
+del global, después de crear `var a` en este nuevo contexto se ejecuta `second()` y el proceso se repite. El contexto
+que esté hasta arriba en la pila es el que se está ejecutando en el momento, una vez que la ejecución finalice se elimina
+de la pila y se procede a ejecutar el que sigue, así hasta terminar.
+
+Para evitar confusiones, el scope se refiere a la visibilidad de variables mientras que el contexto se refiere al valor
+de `this`. Es decir, conforme cambia el execution context también lo hace el objeto `this`.
 
 ---
 
 ## this
 
-Aquí el texto de this
+Ya mencionamos que la ejecución de un execution context por default es global. Esto significa que `this` por default
+está haciendo referencia a un objeto global.
 
-#### [Ejemplo 1: ](./Ejemplo-01)
+En un navegador o browser este objeto global es `window`.
 
-#### [Ejemplo 2: ](./Ejemplo-02)
+![This in browser](./assets/this-browser.png)
+
+Mientras que en un ambiente de Node.js `this` hace referencia al objeto `global`.
+
+![This in Node.js](./assets/this-node.png)
+
+#### [Ejemplo 2: `this` como método](./Ejemplo-02)
+
+---
 
 #### [Ejemplo 3: ](./Ejemplo-03)
 
