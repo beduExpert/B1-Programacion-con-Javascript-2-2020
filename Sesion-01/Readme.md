@@ -22,10 +22,12 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
 
 - **[Execution context](#execution-context)**
 
-- **[This](#this)**
+- **[¿Cuál es el valor de `this`?](#cuál-es-el-valor-de-this)**
 
   - [Ejemplo 2: `this` como método](./Ejemplo-02)
 
+- **[`this` en nuevas instancias](#this-en-nuevas-instancias)**
+  
   - [Ejemplo 3: ](./Ejemplo-03)
 
   - [Reto 1: ](./Reto-01)
@@ -111,7 +113,7 @@ de `this`. Es decir, conforme cambia el execution context también lo hace el ob
 
 ---
 
-## this
+## ¿Cuál es el valor de `this`?
 
 Ya mencionamos que la ejecución de un execution context por default es global. Esto significa que `this` por default
 está haciendo referencia a un objeto global.
@@ -127,6 +129,34 @@ Mientras que en un ambiente de Node.js `this` hace referencia al objeto `global`
 #### [Ejemplo 2: `this` como método](./Ejemplo-02)
 
 ---
+
+## `this` en nuevas instancias
+
+Los function constructor nos permiten definir las propiedades de un objeto que _podría existir eventualmente_.
+El constructor en sí no es un objeto. Cuando usamos el keyword `new` dicho constructor nos retorna un objeto
+(instancia). En este caso `this` hace referencia al objeto instanciado.
+
+```javascript
+var Person = function(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  
+  this.logName = function() {
+    console.log("Name: " + this.firstName + " " + this.lastName);
+  }
+}
+
+var john = new Person("John", "Doe");
+john.logName(); // Name: John Doe
+
+var jane = new Person("Jane", "Doe");
+jane.logName(); // Name: Jane Doe
+```
+
+Tenemos dos instancias de `Person` y en ambos casos `this` hace referencia a cosas distintas pese a que vienen
+del mismo constructor. En el caso de `john.logName`, `this` hace referencia a `john`, un instancia de `Person` pero
+que es una instancia diferente a `jane`, por lo `jane.logName` también hace referencia al objeto que lo contiene,
+es decir, `jane`.
 
 #### [Ejemplo 3: ](./Ejemplo-03)
 
