@@ -28,7 +28,7 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
 
 - **[`this` en nuevas instancias](#this-en-nuevas-instancias)**
   
-  - [Ejemplo 3: ](./Ejemplo-03)
+  - [Ejemplo 3: Usando `call`](./Ejemplo-03)
 
   - [Reto 1: ](./Reto-01)
 
@@ -158,7 +158,51 @@ del mismo constructor. En el caso de `john.logName`, `this` hace referencia a `j
 que es una instancia diferente a `jane`, por lo `jane.logName` también hace referencia al objeto que lo contiene,
 es decir, `jane`.
 
-#### [Ejemplo 3: ](./Ejemplo-03)
+---
+
+## Cambiar el contexto de `this`
+
+En JavaScript las funciones son un tipo de objeto. Todas las funciones tienen los métodos `call`, `bind`, y `apply` 
+que nos permiten cambiar el contexto de `this` al momento de ejecutar la función. En la sección anterior vimos cómo 
+`this` cambia para cada instancia de `Person`.
+
+```javascript
+var Person = function(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  
+  this.logName = function() {
+    console.log("Name: " + this.firstName + " " + this.lastName);
+  }
+}
+
+var john = new Person("John", "Doe");
+john.logName(); // Name: John Doe
+
+var jane = new Person("Jane", "Doe");
+jane.logName(); // Name: Jane Doe
+```
+
+Sabemos que al ejecutar `john.logName()` el contexto de `this` es `john`. Podemos llamar la misma función y darle un
+nuevo contexto con el método `call`.
+
+```javascript
+john.logName.call(jane); // Name: Jane Doe
+```
+
+La única diferencia entre `call` y `apply` es la forma en que se pasan los argumentos. Con el método `call` pasamos los
+argumentos separados por coma, mientras que en el caso de `apply`, el segundo argumento debe ser un arreglo con los
+argumentos restantes.
+
+El método `bind` retorna una nueva función con `this` haciendo referencia al primer argumento que se pasó.
+
+```javascript
+var showName = john.logName.bind(jane);
+
+showName(); // Name: Jane Doe
+```
+
+#### [Ejemplo 3: Usando `call`](./Ejemplo-03)
 
 #### [Reto 1: ](./Reto-01)
 
