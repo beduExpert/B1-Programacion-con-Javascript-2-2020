@@ -32,7 +32,7 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
   
   - [Ejemplo 3: Usando `call`](./Ejemplo-03)
 
-  - [Reto 1: ](./Reto-01)
+  - [Reto 1: Custom logger](./Reto-01)
 
 - **[Postwork](./Postwork)**
 
@@ -206,6 +206,6 @@ showName(); // Name: Jane Doe
 
 #### [Ejemplo 3: Usando `call`](./Ejemplo-03)
 
-#### [Reto 1: ](./Reto-01)
+#### [Reto 1: Custom logger](./Reto-01)
 
 #### [Postwork](./Postwork)
