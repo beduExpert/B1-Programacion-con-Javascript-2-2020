@@ -27,6 +27,8 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
   - [Ejemplo 2: `this` como método](./Ejemplo-02)
 
 - **[`this` en nuevas instancias](#this-en-nuevas-instancias)**
+
+- **[Cambiar el contexto de `this`](#cambiar-el-contexto-de-this)**
   
   - [Ejemplo 3: Usando `call`](./Ejemplo-03)
 
