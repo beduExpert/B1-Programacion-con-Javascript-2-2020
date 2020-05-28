@@ -99,4 +99,31 @@ console.log(name); // ReferenceError: name is not defined
 let name = "John Doe";
 ```
 
+`const` es muy similar a `let`, la única diferencia es que una vez asignado un valor a una variable ya no
+se puede reasignar.
+
+```javascript
+let name = 'John Doe';
+const email = 'john@doe.com';
+
+name = 'Jane Doe';
+email = 'jane@doe.com'; // TypeError: Assignment to constant variable.
+```
+
+Algo muy importante es que declarar una variable con `const` no significa que esta sea inmutable, 
+simplemente no se puede reasignar.
+
+```javascript
+const person = {
+  name: 'John Doe'
+};
+
+person.name = 'Jane Doe';
+
+person = {}; // TypeError: Assignment to constant variable.
+```
+
+Declarar un objeto con `const` no significa que no podamos cambiar sus propiedades, lo que no podemos 
+hacer es asignarle un nuevo valor.
+
 ---
