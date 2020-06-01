@@ -65,8 +65,8 @@ console.log(doubles); // [2, 4, 6, 8, 10]
 console.log(i); // 5
 ```
 
-`let` a diferencia de `var` tiene un scope de bloque, es decir, las variables creadas con `let` solo 
-son accesibles dentro del bloque en el que fueron declaradas.
+`let` a diferencia de `var` tiene un scope de bloque, es decir, las variables creadas con `let` solo son accesibles 
+dentro del bloque en el que fueron declaradas.
 
 ```javascript
 var numbers = [1, 2, 3, 4, 5];
@@ -90,8 +90,8 @@ console.log(name); // undefined
 var name = "John Doe";
 ```
 
-Esta es otra diferencia entre `let` y `var`. Si se trata de acceder a una variable con `let` antes de
-ser declarada obtenemos un `ReferenceError` en lugar de `undefined`.
+Esta es otra diferencia entre `let` y `var`. Si se trata de acceder a una variable con `let` antes de ser declarada 
+obtenemos un `ReferenceError` en lugar de `undefined`.
 
 ```javascript
 console.log(name); // ReferenceError: name is not defined
@@ -99,8 +99,8 @@ console.log(name); // ReferenceError: name is not defined
 let name = "John Doe";
 ```
 
-`const` es muy similar a `let`, la única diferencia es que una vez asignado un valor a una variable ya no
-se puede reasignar.
+`const` es muy similar a `let`, la única diferencia es que una vez asignado un valor a una variable ya no se puede 
+reasignar.
 
 ```javascript
 let name = 'John Doe';
@@ -110,8 +110,8 @@ name = 'Jane Doe';
 email = 'jane@doe.com'; // TypeError: Assignment to constant variable.
 ```
 
-Algo muy importante es que declarar una variable con `const` no significa que esta sea inmutable, 
-simplemente no se puede reasignar.
+Algo muy importante es que declarar una variable con `const` no significa que esta sea inmutable, simplemente no se 
+puede reasignar.
 
 ```javascript
 const person = {
@@ -123,7 +123,67 @@ person.name = 'Jane Doe';
 person = {}; // TypeError: Assignment to constant variable.
 ```
 
-Declarar un objeto con `const` no significa que no podamos cambiar sus propiedades, lo que no podemos 
-hacer es asignarle un nuevo valor.
+Declarar un objeto con `const` no significa que no podamos cambiar sus propiedades, lo que no podemos hacer es 
+asignarle un nuevo valor.
 
 ---
+
+## Template Strings
+
+Las plantillas de texto o template strings, son cadenas de texto que permiten interpolación mediante expresiones. Hacen 
+mucho más fácil crear textos en los que necesitamos integrar variables o expresiones. La sintaxis consta de dos partes,
+la primera es para delimitar la cadena de texto, se usan comillas invertidas. La segunda parte es para agregar
+placeholders mediante el uso del signo de dólar y llaves.
+
+```javascript
+const name = 'John Doe';
+
+console.log("Welcome " + name); // Welcome John Doe
+```
+
+Normalmente si queremos agregar el valor de una variable a una cadena de texto debemos concatenar ambos con el signo +
+y siempre tener cuidado de agregar espacios en blanco para que no salgan ambos textos juntos. Si usamos comillas
+invertidas podemos incluir variables dentro del string.
+
+```javascript
+const name = 'John Doe';
+
+console.log(`Welcome ${ name }`); // Welcome John Doe
+```
+
+Estas plantillas hacen más fácil crear cadenas de string con múltiples líneas.
+
+```javascript
+const message = `Welcome Back!
+John Doe
+`;
+
+console.log( message ); 
+// Welcome Back!
+// John Doe
+```
+
+Además de variables también podemos usar expresiones.
+
+```javascript
+const a = 10;
+const b = 20;
+
+console.log(`a + b = ${a + b}`); // a + b = 30 
+```
+
+```javascript
+const colors = ['blue', 'red', 'yellow'];
+
+console.log(`Primary colors: ${ colors.join(', ') }`); // Primary colors: blue, red, yellow
+```
+
+```javascript
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+console.log(`Odd numbers: ${ 
+  numbers.filter(function(n) { 
+    return n % 2 !== 0 
+  }) 
+}`); // Odd numbers: 1,3,5,7,9
+```
