@@ -167,7 +167,7 @@ console.log( message );
 // John Doe
 ```
 
-Además de variables también podemos usar expresiones.
+Además de variables también podemos usar expresiones matemáticas.
 
 ```javascript
 const a = 10;
@@ -176,11 +176,15 @@ const b = 20;
 console.log(`a + b = ${a + b}`); // a + b = 30 
 ```
 
+Trabajar con arreglos.
+
 ```javascript
 const colors = ['blue', 'red', 'yellow'];
 
 console.log(`Primary colors: ${ colors.join(', ') }`); // Primary colors: blue, red, yellow
 ```
+
+O incluso funciones de alto orden.
 
 ```javascript
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -333,4 +337,70 @@ const greetings = {
 
 console.log(greetings); 
 // { english: "Hello", french: "Bonjour", russian: "Privet", portuguese: "Oi" }
+```
+
+---
+
+## Destructuring
+
+Destructuring nos permite extraer varias propiedades de un objeto o elementos de un arreglo al mismo tiempo.
+
+```javascript
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  country: 'Unknown'
+};
+
+const firstName = person.firstName;
+const lastName = person.lastName;
+
+console.log(firstName, lastName); // John Doe
+```
+
+Este es un caso muy común. En ocasiones queremos crear variables a partir de propiedades de un objeto. Podemos lograr
+lo mismo en una sola línea.
+
+```javascript
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  country: 'Unknown'
+};
+
+const { firstName, lastName } = person;
+
+console.log(firstName, lastName); // John Doe
+```
+
+Las llaves del lado izquierdo del `=` no son un objeto. Esta es la sintaxis de object destructuring. Estamos creando dos
+nuevas variables `firstName` y `lastName`, después estamos extrayendo dos propiedades de `person` con el mismo nombre de
+las variables, el valor de esas propiedades es el que se asigna a las variables creadas.
+
+Podemos usar valores default en caso de no encontrar la propiedad que buscamos. Para esto debemos asignar (`=`) un valor
+dentro de las llaves.
+
+```javascript
+const person = {
+  firstName: 'John',
+  lastName: 'Doe'
+};
+
+const { firstName, country = 'Unknown' } = person;
+
+console.log(firstName, country); // John Unknown
+```
+
+En ocasiones no queremos usar el mismo nombre de la propiedad del objeto, por ejemplo cuando estamos consumiendo 
+información de un recurso externo o de una base de datos. Usando `:` podemos renombrar una variable.
+
+```javascript
+const person = {
+  firstName: 'John',
+  lastName: 'Doe'
+};
+
+const { firstName: name } = person;
+
+console.log(name); // John 
 ```
