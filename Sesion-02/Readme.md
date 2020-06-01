@@ -20,6 +20,10 @@ Implementar las nuevas características de JavaScript en la creación y asignaci
 
 - **[Spread operator](#spread-operator)**
 
+    - [Copiar iterables](#copiar-iterables)
+    
+    - [Unir iterables](#unir-iterables)
+
 - **[Destructuring](#destructuring)**
 
 ---
@@ -186,4 +190,147 @@ console.log(`Odd numbers: ${
     return n % 2 !== 0 
   }) 
 }`); // Odd numbers: 1,3,5,7,9
+```
+
+---
+
+## Spread operator
+
+El operador de propagación o spread operator hace más fácil trabajar con iterables como arreglos y objetos. La sintaxis
+de este operador es `...` y se coloca justo antes de la variable.
+
+### Copiar iterables
+
+Uno de los usos más comunes de este operador es duplicar arreglos. Después de declarar el nombre de la variable usamos
+corchetes para asignar un nuevo arreglo y dentro colocamos el spread operator para obtener todos los elementos del 
+arreglo que queremos copiar.
+
+```javascript
+const colors = ['blue', 'red', 'yellow'];
+const copyOfColors = [ ...colors ];
+
+console.log(copyOfColors); // ['blue', 'red', 'yellow']
+```
+
+En el caso de objetos es casi lo mismo, la única diferencia es el uso de llaves en lugar de corchetes.
+
+```javascript
+const book = {
+  author: 'Marijn Haverbeke',
+  title: 'Eloquent JavaScript',
+  year: 2018
+};
+const copyOfBook = { ...book };
+
+console.log(copyOfBook); 
+// { author: "Marijn Haverbeke", title: "Eloquent JavaScript", year: 2018 }
+```
+
+La ventaja de usar el spread operator y no el operador de asignación (`=`) es que el primero crea una nueva referencia a
+los valores primitivos, por lo que cambios en el original no afectan la copia.
+
+```javascript
+const colors = ['blue', 'red', 'yellow'];
+const copyOfColorsWithEqual = colors;
+const copyOfColorsWithSpread = [ ...colors ];
+
+colors[0] = 'white';
+
+console.log(colors); // ["white", "red", "yellow"]
+console.log(copyOfColorsWithEqual); // ["white", "red", "yellow"]
+console.log(copyOfColorsWithSpread); // ["blue", "red", "yellow"]
+```
+
+### Unir iterables
+
+También podemos usar el spread operator para concatenar arreglos.
+
+```javascript
+const oneToThree = [1, 2, 3];
+const fourToSix = [4, 5, 6];
+const oneToSix = [ ...oneToThree, ...fourToSix ]
+
+console.log(oneToSix); // [1, 2, 3, 4, 5, 6]
+```
+
+Ahora `oneToSix` contiene todos los elementos de `oneToThree` y `fourToSix`. Además de concatenar arreglos podemos
+usarlo para agregar nuevos elementos en un arreglo. 
+
+```javascript
+const oneToThree = [1, 2, 3];
+const oneToSix = [ ...oneToThree, 4, 5, 6 ]
+
+console.log(oneToSix); // [1, 2, 3, 4, 5, 6]
+```
+
+Hay que tomar en cuenta que la posición donde se coloque el spread afecta el orden de los elementos en el arreglo.
+
+```javascript
+const oneToThree = [1, 2, 3];
+const oneToSix = [ 4, 5, 6, ...oneToThree ]
+
+console.log(oneToSix); // [4, 5, 6, 1, 2, 3]
+```
+
+Es muy similar en el caso de objetos.
+
+```javascript
+const formalGreetings = {
+  english: 'Hello',
+  french: 'Bonjour',
+};
+const informalGreetings = {
+  russian: 'Privet',
+  portuguese: 'Oi'
+}
+
+const greetings = { ...formalGreetings, ...informalGreetings }
+
+console.log(greetings); 
+// { english: "Hello", french: "Bonjour", russian: "Privet", portuguese: "Oi" }
+```
+
+En el caso de tener propiedades duplicadas se sobrescriben.
+
+```javascript
+const formalGreetings = {
+  english: 'Hello',
+  french: 'Bonjour',
+};
+const informalGreetings = {
+  russian: 'Privet',
+  portuguese: 'Oi'
+}
+
+const greetings = { 
+  ...formalGreetings, 
+  ...informalGreetings,
+  english: 'Hi' 
+}
+
+console.log(greetings); 
+// { english: "Hi", french: "Bonjour", russian: "Privet", portuguese: "Oi" }
+```
+
+Así como en los arreglos la posición del spread operator afecta el orden de los elementos, en los objetos el orden
+del spread operator determina qué propiedad se sobrescribe.
+
+```javascript
+const formalGreetings = {
+  english: 'Hello',
+  french: 'Bonjour',
+};
+const informalGreetings = {
+  russian: 'Privet',
+  portuguese: 'Oi'
+}
+
+const greetings = { 
+  english: 'Hi', 
+  ...formalGreetings, 
+  ...informalGreetings
+}
+
+console.log(greetings); 
+// { english: "Hello", french: "Bonjour", russian: "Privet", portuguese: "Oi" }
 ```
