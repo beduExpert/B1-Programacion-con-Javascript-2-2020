@@ -24,6 +24,8 @@ Implementar las nuevas características de JavaScript en la creación y asignaci
 
     - [Copiar iterables](#copiar-iterables)
     
+    - [Ejemplo 2: Copiar arreglos y objetos](./Ejemplo-02/Readme.md)
+    
     - [Unir iterables](#unir-iterables)
 
 - **[Destructuring](#destructuring)**
@@ -183,20 +185,7 @@ console.log(copyOfBook);
 // { author: "Marijn Haverbeke", title: "Eloquent JavaScript", year: 2018 }
 ```
 
-La ventaja de usar el spread operator y no el operador de asignación (`=`) es que el primero crea una nueva referencia a
-los valores primitivos, por lo que cambios en el original no afectan la copia.
-
-```javascript
-const colors = ['blue', 'red', 'yellow'];
-const copyOfColorsWithEqual = colors;
-const copyOfColorsWithSpread = [ ...colors ];
-
-colors[0] = 'white';
-
-console.log(colors); // ["white", "red", "yellow"]
-console.log(copyOfColorsWithEqual); // ["white", "red", "yellow"]
-console.log(copyOfColorsWithSpread); // ["blue", "red", "yellow"]
-```
+#### [Ejemplo 2: Copiar arreglos y objetos](./Ejemplo-02)
 
 ### Unir iterables
 

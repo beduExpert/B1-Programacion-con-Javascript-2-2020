@@ -16,7 +16,7 @@ En una nueva carpeta vamos a crear un archivo `HTML` en blanco llamado `index.ht
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>Ejemplo 1: Sentencias de bloque</title>
+    <title>Ejemplo 1: Strings en ES6</title>
   </head>
   <body>
     <script type="text/javascript" src="./ejemplo-1.js"></script>
