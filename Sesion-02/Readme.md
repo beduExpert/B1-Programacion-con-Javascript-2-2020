@@ -287,7 +287,20 @@ console.log(greetings);
 
 ## Destructuring
 
-Destructuring nos permite extraer varias propiedades de un objeto o elementos de un arreglo al mismo tiempo.
+Destructuring es extraer valores o propiedades de un arreglo u objeto. 
+
+```javascript
+const colors = [ 'Red', 'Blue', 'Yellow' ]
+
+const [ red, blue, yellow ] = colors;
+
+console.log(red); // Red
+console.log(blue); // Blue
+console.log(yellow); // Yellow
+```
+
+En este ejemplo estamos creando 3 variables (`red`, `blue` y `yellow`) y asignando los valores del arreglo `colors`.
+Esta asignación se hace en base al index del arreglo.
 
 ```javascript
 const person = {
