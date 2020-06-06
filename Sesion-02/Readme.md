@@ -30,8 +30,12 @@ Implementar las nuevas características de JavaScript en la creación y asignaci
 
 - **[Destructuring](#destructuring)**
 
+    - [Reto 1: Intercambiar variables](./Reto-01/Readme.md)
+
     - [Ejemplo 3: Object destructuring](./Ejemplo-03/Readme.md)
     
+    - [Reto 2: Objetos anidados](./Reto-02/Readme.md)
+
 ---
 
 ## ¿Qué es ECMAScript 6?
@@ -302,6 +306,8 @@ console.log(yellow); // Yellow
 En este ejemplo estamos creando 3 variables (`red`, `blue` y `yellow`) y asignando los valores del arreglo `colors`.
 Esta asignación se hace en base al index del arreglo.
 
+#### [Reto 1: Intercambiar variables](./Reto-01/Readme.md)
+
 ```javascript
 const person = {
   firstName: 'John',
@@ -335,3 +341,5 @@ nuevas variables `firstName` y `lastName`, después estamos extrayendo dos propi
 las variables, el valor de esas propiedades es el que se asigna a las variables creadas.
 
 #### [Ejemplo 3: Object destructuring](./Ejemplo-03/Readme.md)
+
+#### [Reto 2: Objetos anidados](./Reto-02/Readme.md)
