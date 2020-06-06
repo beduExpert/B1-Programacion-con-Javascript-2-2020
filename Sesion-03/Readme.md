@@ -1,9 +1,39 @@
+[`Programación con JavaScript`](../Readme.md) > `Sesión 03`
 
-## Sesión 03: Nombre de la sesión
+---
 
-### OBJETIVOS 
+# Sesión 3: ECMAScript 6 - Segunda parte
 
+## Objetivos
 
+...
 
-#### ORGANIZACION DE LA CLASE 
+---
 
+## Tabla de Contenidos
+
+- **[Arrow functions](#arrow-functions)**
+
+- **[Default parameters](#default-parameters)**
+
+- **[Rest parameter](#rest-parameter)**
+
+---
+
+## Arrow functions
+
+...
+
+---
+
+## Default parameters
+
+...
+
+---
+
+## Rest parameter
+
+...
+
+---
