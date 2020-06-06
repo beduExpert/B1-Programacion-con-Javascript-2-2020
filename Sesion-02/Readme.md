@@ -30,6 +30,8 @@ Implementar las nuevas características de JavaScript en la creación y asignaci
 
 - **[Destructuring](#destructuring)**
 
+    - [Ejemplo 3: Object destructuring](./Ejemplo-03/Readme.md)
+    
 ---
 
 ## ¿Qué es ECMAScript 6?
@@ -149,7 +151,7 @@ const msg = `Hello World!`;
 console.log(msg); // Hello World
 ```
 
-#### [Ejemplo 1: Strings en ES6](./Ejemplo-01)
+#### [Ejemplo 1: Strings en ES6](./Ejemplo-01/Readme.md)
 
 ---
 
@@ -185,7 +187,7 @@ console.log(copyOfBook);
 // { author: "Marijn Haverbeke", title: "Eloquent JavaScript", year: 2018 }
 ```
 
-#### [Ejemplo 2: Copiar arreglos y objetos](./Ejemplo-02)
+#### [Ejemplo 2: Copiar arreglos y objetos](./Ejemplo-02/Readme.md)
 
 ### Unir iterables
 
@@ -319,30 +321,4 @@ Las llaves del lado izquierdo del `=` no son un objeto. Esta es la sintaxis de o
 nuevas variables `firstName` y `lastName`, después estamos extrayendo dos propiedades de `person` con el mismo nombre de
 las variables, el valor de esas propiedades es el que se asigna a las variables creadas.
 
-Podemos usar valores default en caso de no encontrar la propiedad que buscamos. Para esto debemos asignar (`=`) un valor
-dentro de las llaves.
-
-```javascript
-const person = {
-  firstName: 'John',
-  lastName: 'Doe'
-};
-
-const { firstName, country = 'Unknown' } = person;
-
-console.log(firstName, country); // John Unknown
-```
-
-En ocasiones no queremos usar el mismo nombre de la propiedad del objeto, por ejemplo cuando estamos consumiendo 
-información de un recurso externo o de una base de datos. Usando `:` podemos renombrar una variable.
-
-```javascript
-const person = {
-  firstName: 'John',
-  lastName: 'Doe'
-};
-
-const { firstName: name } = person;
-
-console.log(name); // John 
-```
+#### [Ejemplo 3: Object destructuring](./Ejemplo-03/Readme.md)
