@@ -72,4 +72,5 @@ const { firstName: name,  country: ctry = 'Unknown'} = person;
 console.log(name, ctry); // John Unknown
 ```
 
+![Object Destructuring](./assets/destructuring.png)
 
