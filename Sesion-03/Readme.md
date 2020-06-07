@@ -14,6 +14,14 @@ Simplificar el código con la nueva sintaxis para crear funciones
 
 - **[Arrow functions](#arrow-functions)**
 
+    - [Sintaxis](#sintaxis)
+    
+    - [Paréntesis](#paréntesis)
+    
+    - [Return implícito](#return-implícito)
+    
+    - [Funciones anónimas](#funciones-anónimas)
+
 - **[Default parameters](#default-parameters)**
 
 - **[Rest parameter](#rest-parameter)**
