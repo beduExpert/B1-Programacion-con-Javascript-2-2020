@@ -21,8 +21,12 @@ Simplificar el código con la nueva sintaxis para crear funciones
     - [Return implícito](#return-implícito)
     
     - [Funciones anónimas](#funciones-anónimas)
+    
+    - [Ejemplo 1: Arrow functions y this](./Ejemplo-01/Readme.md)
 
 - **[Default parameters](#default-parameters)**
+
+    - [Ejemplo 2: Calcular total](./Ejemplo-02/Readme.md)
 
 - **[Rest parameter](#rest-parameter)**
 
@@ -119,11 +123,35 @@ const logName = name => console.log(`Hello ${name}!`);
 logName('John Doe'); // Hello John Doe!
 ```
 
+#### [Ejemplo 1: Arrow functions y this](./Ejemplo-01/Readme.md)
+
 ---
 
 ## Default parameters
 
-...
+Por default todos los parámetros de una función se definen como `undefined`, este es el valor que tienen cuando no
+pasamos un argumento al momento de llamar una función.
+
+```javascript
+function logMessage(message) {
+  console.log(message);
+}
+
+logMessage(); // undefined
+```
+
+Cuando estamos definiendo los parámetros de una función podemos asignar un valor por default, este será asignado siempre
+y cuando el valor sea `undefined`, es decir, se omitió el argumento al momento de ejecutar la función.
+
+```javascript
+function logMessage(message = 'Hello World') {
+  console.log(message);
+}
+
+logMessage(); // Hello World
+```
+
+#### [Ejemplo 2: Calcular total](./Ejemplo-02/Readme.md)
 
 ---
 
