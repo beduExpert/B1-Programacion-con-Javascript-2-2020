@@ -157,6 +157,30 @@ logMessage(); // Hello World
 
 ## Rest parameter
 
-...
+Todas las funciones pueden ser llamadas con cualquier número de argumentos.
+
+```javascript
+function sum(a, b) {
+  return a + b;
+}
+
+const total = sum(1, 2, 3, 4, 5); 
+console.log(total); // 3
+```
+
+Esto no arroja ningún error ya que los argumentos excedentes son ignorados, solo se toman en cuenta los dos primeros.
+Usando la sintaxis del spread operator (`...`) podemos asignar cualquier cantidad de argumentos dentro de un arreglo.
+
+```javascript
+function sum(...numbers) {
+  return numbers.reduce((prev, curr) => prev + curr, 0);
+}
+
+const total = sum(1, 2, 3, 4, 5); 
+console.log(total); // 15
+```
+
+Spread operator y rest parameter tienen la misma sintaxis pero hacen lo opuesto. El primero nos permite extrer todos los
+elementos de un arreglo, mientras que el segundo crea un arreglo con todos los argumentos que recibe.
 
 ---
