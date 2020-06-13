@@ -184,3 +184,7 @@ Spread operator y rest parameter tienen la misma sintaxis pero hacen lo opuesto.
 elementos de un arreglo, mientras que el segundo crea un arreglo con todos los argumentos que recibe.
 
 ---
+
+#### [Reto 1: Crear un número de teléfono](./Reto-01/Readme.md)
+
+#### [Reto 2: Encontrar elementos faltantes](./Reto-02/Readme.md)
