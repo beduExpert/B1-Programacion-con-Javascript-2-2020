@@ -37,7 +37,7 @@ function findMissingNumbers(numbers) {
   return missing
 }
 
-// reduce()
+// Higher order functions
 const findMissingNumbers = (numbers) => (
   Array.from(Array(Math.max(...numbers)).keys()) // Create an array from 0 to the max number in array - 1
     .map((n, i) => numbers.indexOf(i) < 0 && i) // If number does not exist in array return false
