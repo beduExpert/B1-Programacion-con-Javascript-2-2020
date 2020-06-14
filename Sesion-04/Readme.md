@@ -16,6 +16,8 @@ Realizar operaciones de manera asíncrona y distinguir entre las distintas opcio
 
 - **[Callbacks](#callbacks)**
 
+    - [Ejemplo 1: Callback hell](./Ejemplo-01/Readme.md)
+
 - **[Promesas](#promesas)**
 
 - **[Async/await](#asyncawait)**
@@ -48,7 +50,34 @@ operaciones con largos tiempos de respuesta sin bloquear el thread principal.
 
 ## Callbacks
 
-...
+Un callback es una función que se pasa como argumento a otra función para que sea ejecutada al final de algún proceso.
+Por ejemplo la función `setTimeout` vista en la sesión anterior. Esta función espera cierta cantidad de milisegundos 
+antes de ejecutar la función que recibe como argumento.
+
+```javascript
+setTimeout(() => console.log('Hello World'), 1000);
+```
+
+El callback también puede ser asignado a una variable para pasarlo a `setTimeout`.
+
+```javascript
+const callback = () => console.log('Hello World');
+ 
+setTimeout(callback, 1000);
+```
+
+En resumen, `setTimeout` retrasa la ejecución de la función callback como mínimo la cantidad especificada de tiempo en
+milisegundos. Asignar un tiempo de 0ms no significa que el callback se ejecuta de manera inmediata.
+
+```javascript
+const callback = () => console.log('World');
+ 
+setTimeout(callback, 0);
+
+console.log('Hello');
+``` 
+
+#### [Ejemplo 1: Callback hell](./Ejemplo-01/Readme.md)
 
 ---
 
