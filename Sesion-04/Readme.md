@@ -12,7 +12,7 @@ Realizar operaciones de manera asíncrona y distinguir entre las distintas opcio
 
 ## Tabla de Contenidos
 
-- **[Asincronía](#asincronia)**
+- **[Asincronía](#asincronía)**
 
 - **[Callbacks](#callbacks)**
 
