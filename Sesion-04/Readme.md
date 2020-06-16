@@ -83,7 +83,45 @@ console.log('Hello');
 
 ## Promesas
 
-...
+Una promesa es una acción asíncrona que podría cumplirse en algún momento y producir un valor. En cierta forma es igual 
+a los callbacks pero con una mejor sintaxis que facilita la legibilidad.
+
+Para crear promesas usamos el constructor `Promise` el cual espera una función como argumento (se ejecuta de inmediato)
+que a su vez recibe una función usada para resolver la promesa.
+
+```javascript
+function foo() {
+  return new Promise((resolve) => {
+    // Async operations...
+    resolve(value);
+  })
+}
+```
+
+Podemos obtener el resultado de una promesa usando el método `then`, este registra una función callback para ser llamada
+cuando la promesa se resuelve y produce un valor.
+
+```javascript
+function foo() {
+  return new Promise((resolve) => {
+    // Async operations...
+    resolve(value);
+  })
+}
+
+foo().then(value => console.log(value)); // value created in foo()
+```
+
+En ocasiones las operaciones asíncronas pueden llegar a fallar. Para manejar esto podemos usar el método `catch` el cual
+registra un callback a ejecutar cuando una promesa no se resuelve, similar a la forma en que trabaja `then`. Cuando una
+promesa es rechazada la promesa que produce `then` también es rechazada, esto significa que si tenemos una cadena de
+acciones asíncronas y uno de los pasos llega a fallar, toda la cadena se rechaza.
+
+```javascript
+foo()
+  .then(value => console.log(value)) // if promise is rejected we skip this
+  .catch(error => console.log(error)) // error produced in foo()
+```
 
 ---
 
