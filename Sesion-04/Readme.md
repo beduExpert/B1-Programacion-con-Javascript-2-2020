@@ -123,8 +123,87 @@ foo()
   .catch(error => console.log(error)) // error produced in foo()
 ```
 
+La función que pasamos como argumento al constructor `Promise` recibe un segundo argumento que podemos utilizar para
+rechazar una promesa.
+
+```javascript
+function foo() {
+  return new Promise((resolve, reject) => {
+    // Async operations...
+    reject(new Error('Process Failed'));
+  })
+}
+
+foo()
+  .then(value => console.log(value))
+  .catch(error => console.log(error)); // error produced in foo()
+```
+
 ---
 
 ## Async/await 
 
-...
+Anteriormente vimos varias de las características de ES6, `async/await` es una de ellas. La finalidad de este tipo de 
+funciones es simplificar el comportamiento y uso de promesas.
+
+Al colocar el keyword `async` en la declaración de una función, estamos definiendo una función asíncrona. Esta función
+siempre retornará una promesa, esto significa que si el valor retornado no es una promesa automáticamente se envuelve
+dentro de una.
+
+```javascript
+async function foo() {
+  return 'Hello World';
+}
+
+foo().then(value => console.log(value)) // Hello World 
+```
+
+Claro que también podemos retornar explícitamente una promesa y el resultado será el mismo.
+
+```javascript
+async function foo() {
+  return Promise.resolve('Hello World');
+}
+
+foo().then(value => console.log(value)) // Hello World 
+```
+
+El keyword `await` solo puede ser usado dentro de funciones `async` nos permite esperar hasta que una promesa sea
+resuelta y retorne un valor.
+
+```javascript
+function foo() {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve('Hello World'), 1000)
+  })
+}
+
+async function bar() {
+  let result = await foo()
+  
+  console.log(result)
+}
+
+bar()
+```
+
+La función pausa su ejecución cuando encuentra un `await` y continua una vez que la promesa haya sido resuelta. Debemos
+envolver esta operación en un `try...catch` en caso que la promesa sea rechazada.
+
+```javascript
+function foo() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => reject('Failed'), 1000)
+  })
+}
+
+async function bar() {
+  try {
+    let result = await foo()
+  } catch (e) {
+    console.log(e)  
+  }
+}
+
+bar()
+```
