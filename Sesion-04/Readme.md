@@ -20,6 +20,8 @@ Realizar operaciones de manera asíncrona y distinguir entre las distintas opcio
 
 - **[Promesas](#promesas)**
 
+    - [Reto 1: Creando Promise.all](./Reto-01/Readme.md)
+
 - **[Async/await](#asyncawait)**
 
 ---
@@ -138,6 +140,8 @@ foo()
   .then(value => console.log(value))
   .catch(error => console.log(error)); // error produced in foo()
 ```
+
+#### [Reto 1: Creando Promise.all](./Reto-01/Readme.md)
 
 ---
 
