@@ -19,10 +19,14 @@ Realizar operaciones de manera asíncrona y distinguir entre las distintas opcio
     - [Ejemplo 1: Callback hell](./Ejemplo-01/Readme.md)
 
 - **[Promesas](#promesas)**
+    
+    - [Ejemplo 2: Cadena de promesas](./Ejemplo-02/Readme.md)
 
     - [Reto 1: Creando Promise.all](./Reto-01/Readme.md)
 
 - **[Async/await](#asyncawait)**
+
+    - [Reto 2: Llamar función async](./Reto-02/Readme.md)
 
 ---
 
@@ -141,6 +145,8 @@ foo()
   .catch(error => console.log(error)); // error produced in foo()
 ```
 
+#### [Ejemplo 2: Cadena de promesas](./Ejemplo-02/Readme.md)
+
 #### [Reto 1: Creando Promise.all](./Reto-01/Readme.md)
 
 ---
@@ -211,3 +217,5 @@ async function bar() {
 
 bar()
 ```
+
+#### [Reto 2:  Llamar función async](./Reto-02/Readme.md)

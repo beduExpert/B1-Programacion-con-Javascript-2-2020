@@ -1,11 +1,51 @@
- ## Nombre del Reto: 
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Reto 02`
 
-### OBJETIVO 
+---
 
+## Reto 2: Llamar función async
 
-#### REQUISITOS 
+### Objetivos
 
+Ejecutar una función `async` desde una función normal
 
-#### DESARROLLO
+#### Requisitos
 
+`N/A`
 
+#### Desarrollo
+
+La siguiente función `async` espera un segundo antes de retornar un string `Hello World`. ¿Cómo podemos llamarla desde
+una función que no es `async` y usar el valor que resuelve la promesa para mostrarlo en consola sin usar `await`?
+
+```javascript
+async function wait() {
+  await new Promise(resolve => setTimeout(resolve, 1000));
+
+  return 'Hello World';
+}
+
+function log(value) {
+  // Code goes here...
+}
+
+log()
+```
+
+<details>
+  <summary>Solución</summary>
+
+```javascript
+async function wait() {
+  await new Promise(resolve => setTimeout(resolve, 1000));
+
+  return 'Hello World';
+}
+
+function log() {
+  wait().then(result => console.log(result));
+}
+
+log()
+```
+
+</details>
