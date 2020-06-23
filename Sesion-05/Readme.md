@@ -20,6 +20,8 @@ Consumir recursos externos de una API mediante peticiones HTTP
 
 - **[fetch](#fetch)**
 
+    - [Ejemplo 1: NASA API](./Ejemplo-01/Readme.md)
+    
 ---
 
 ## API
@@ -79,3 +81,20 @@ Otros métodos menos usados:
 
 ## fetch
 
+El método `fetch()` nos permite realizar peticiones HTTP de manera asíncrona.
+
+```javascript
+fetch('http://example.com/data.json')
+  .then(function(response) {
+    return response.json()  
+  })
+  .then(function(data) {
+    console.log(data)
+  })
+```
+
+En este ejemplo se está haciendo una petición tipo `GET` a la URL `http://example.com/data.json` lo que nos retorna una
+promesa con un objeto `Response`. Esta respuesta contiene información como los headers, la url a la que se hizo la
+petición y el body que contiene la información que estamos solicitando. Para extraer este body usamos el método `json()`.
+
+#### [Ejemplo 1: NASA API](./Ejemplo-01/Readme.md)
