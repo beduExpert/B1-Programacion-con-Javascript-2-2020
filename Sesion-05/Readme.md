@@ -22,6 +22,8 @@ Consumir recursos externos de una API mediante peticiones HTTP
 
     - [Ejemplo 1: NASA API](./Ejemplo-01/Readme.md)
     
+    - [Reto 1: Usuarios de GitHub](./Reto-01/Readme.md)
+    
 ---
 
 ## API
@@ -98,3 +100,5 @@ promesa con un objeto `Response`. Esta respuesta contiene información como los 
 petición y el body que contiene la información que estamos solicitando. Para extraer este body usamos el método `json()`.
 
 #### [Ejemplo 1: NASA API](./Ejemplo-01/Readme.md)
+
+#### [Reto 1: Usuarios de GitHub](./Reto-01/Readme.md)
