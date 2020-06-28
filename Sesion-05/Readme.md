@@ -24,6 +24,10 @@ Consumir recursos externos de una API mediante peticiones HTTP
     
     - [Reto 1: Usuarios de GitHub](./Reto-01/Readme.md)
     
+    - [Reto 2: Repositorios de GitHub](./Reto-02/Readme.md)
+    
+    - [Reto 3: Resultados dinámicos](./Reto-03/Readme.md)
+    
 ---
 
 ## API
@@ -102,3 +106,7 @@ petición y el body que contiene la información que estamos solicitando. Para e
 #### [Ejemplo 1: NASA API](./Ejemplo-01/Readme.md)
 
 #### [Reto 1: Usuarios de GitHub](./Reto-01/Readme.md)
+
+#### [Reto 2: Repositorios de GitHub](./Reto-02/Readme.md)
+
+#### [Reto 3: Resultados dinámicos](./Reto-03/Readme.md)
