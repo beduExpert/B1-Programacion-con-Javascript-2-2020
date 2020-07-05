@@ -80,3 +80,97 @@ Algunos navegadores no soportan la nueva sintaxis de ES6 como `import` y `export
 escenas, Webpack transpila el código para que el uso de módulos sea soportado en todos los navegadores. Es importante
 tomar en cuenta que Webpack solo modifica sentencias `import` y `export`, para hacer uso de cualquier otra característica
 de ES6 es necesario usar un transpilador como Babel.
+
+### Entry
+
+El punto de entrada le dice a webpack cuál módulo debe ser usado para comenzar a crear el grafo de dependencias. Webpack
+se encargará de buscar todos los módulos y librerias que utiliza dicho punto de entrada. El valor por default es 
+`./src/index.js`, pero podemos especificar una ruta diferente.
+
+```javascript
+module.exports = {
+  entry: './path/to/entre/file.js'
+}
+```
+
+### Output
+
+La salida especifica dónde deben colocarse los bundles resultantes y cómo se deben llamar los archivos. Por default el
+bundle principal es `./dist/main.js`. Para cambiar este valor agregamos una propiedad `output` cuyo valor es un objeto
+que nos permite definir la ruta y el nombre del archivo.
+
+```javascript
+const path = require('path');
+
+module.exports = {
+  entry: './path/to/entre/file.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  }
+}
+```
+
+A diferencia del `entry`, cuando estamos definiendo la ruta del `output` necesitamos una ruta absoluta, por ello usamos
+`path` que es un módulo de Node.js. El método `path.resolve()` genera una ruta con los argumentos que le pasamos, 
+`__dirname` es una variable cuyo valor es la ruta absoluta, `dist` es la carpeta donde queremos colocar el bundle final.
+
+### Loaders
+
+Webpack solamente entiende archivos de JavaScript y JSON. Usando `loaders` webpack puede procesar otro tipo de archivos
+y convertirlos en módulos que serán agregados al grafo de dependencias.
+
+```javascript
+const path = require('path');
+
+module.exports = {
+  entry: './path/to/entre/file.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  },
+  module: {
+    rules: [
+      { test: /\.css$/, use: 'css-loader' }
+    ] 
+  }
+}
+```
+
+Cada `loader` tiene dos propiedades, la primera es `test`, aquí definimos con una expresión regular el tipo de archivos 
+que deseamos procesar, con la segunda propiedad `use` indicamos el tipo de `loader` que debe ser usado. En el ejemplo
+anterior estamos usando `css-loader` para procesar todos los archivos `css` del proyecto.
+
+> Los loaders deben ser instalados previamente: `npm install --save-dev css-loader`
+
+### Plugins
+
+Los `loaders` nos ayudan a transformar ciertos tipos de módulos, mientras que los plugins permiten una amplia gama de
+tareas como optimización de los bundles, manejo de assets, inyección de variables de entorno, etc. Para usar un plugin
+debemos importarlo y agregarlo al arreglo `plugins`.
+
+```javascript
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+
+module.exports = {
+  entry: './path/to/entre/file.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  },
+  module: {
+    rules: [
+      { test: /\.css$/, use: 'css-loader' }
+    ] 
+  },
+  plugins: [
+    new HtmlWebpackPlugin({template: './src/index.html'})
+  ]
+}
+```
+
+La mayoría de los plugins pueden ser configurados. En este ejemplo, `html-webpack-plugin` genera un archivo html listo
+para ser usado inyectando automáticamente los bundles generados por webpack.
+
+> Los plugins deben ser instalados previamente: `npm install --save-dev html-webpack-plugin`
