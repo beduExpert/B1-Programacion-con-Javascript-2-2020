@@ -26,6 +26,8 @@ Procesar aplicaciones modernas de JavaScript con Webpack para producir uno o má
     
     - [Plugins](#plugins)
     
+    - [Ejemplo 2: Webpack y CSS](./Ejemplo-02/Readme.md)
+    
 ---
 
 ## ES6 Modules
@@ -143,7 +145,7 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.css$/, use: 'css-loader' }
+      { test: /\.txt$/, use: 'raw-loader' }
     ] 
   }
 }
@@ -151,9 +153,9 @@ module.exports = {
 
 Cada `loader` tiene dos propiedades, la primera es `test`, aquí definimos con una expresión regular el tipo de archivos 
 que deseamos procesar, con la segunda propiedad `use` indicamos el tipo de `loader` que debe ser usado. En el ejemplo
-anterior estamos usando `css-loader` para procesar todos los archivos `css` del proyecto.
+anterior estamos usando `raw-loader` para procesar todos los archivos `txt` del proyecto.
 
-> Los loaders deben ser instalados previamente: `npm install --save-dev css-loader`
+> Los loaders deben ser instalados previamente: `npm install --save-dev raw-loader`
 
 ### Plugins
 
@@ -186,3 +188,5 @@ La mayoría de los plugins pueden ser configurados. En este ejemplo, `html-webpa
 para ser usado inyectando automáticamente los bundles generados por webpack.
 
 > Los plugins deben ser instalados previamente: `npm install --save-dev html-webpack-plugin`
+
+#### [Ejemplo 2: Webpack y CSS](./Ejemplo-02/Readme.md)
