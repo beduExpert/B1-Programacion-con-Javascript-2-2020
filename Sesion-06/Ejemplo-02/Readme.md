@@ -114,8 +114,8 @@ module.exports = {
 ```
 
 Con esto le estamos diciendo a webpack que siempre que encuentre un archivo `.css` debe compilarlo con `css-loader` y 
-después usar `style-loader` con el output de css-loader. El orden en el que webpack aplica los loaders es de izquierda
-a derecha.
+después usar `style-loader` con el output de css-loader. El orden en el que webpack aplica los loaders es de derecha a
+izquierda.
 
 Ahora solo debemos importar `app.css` en nuestro entry para que webpack lo considere como una dependencia.
 
