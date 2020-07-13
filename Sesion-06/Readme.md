@@ -28,6 +28,8 @@ Procesar aplicaciones modernas de JavaScript con Webpack para producir uno o má
     
     - [Ejemplo 2: Webpack y CSS](./Ejemplo-02/Readme.md)
     
+    - [Ejemplo 3: Webpack Dev Server](./Ejemplo-03/Readme.md)
+    
 ---
 
 ## ES6 Modules
@@ -190,3 +192,5 @@ para ser usado inyectando automáticamente los bundles generados por webpack.
 > Los plugins deben ser instalados previamente: `npm install --save-dev html-webpack-plugin`
 
 #### [Ejemplo 2: Webpack y CSS](./Ejemplo-02/Readme.md)
+
+#### [Ejemplo 3: Webpack Dev Server](./Ejemplo-03/Readme.md)
