@@ -22,6 +22,8 @@ Consumir recursos externos de una API mediante peticiones HTTP
 
     - [Ejemplo 1: NASA API](./Ejemplo-01/Readme.md)
     
+    - [Ejemplo 2: Buscador de GIFs](./Ejemplo-02/Readme.md)
+    
     - [Reto 1: Usuarios de GitHub](./Reto-01/Readme.md)
     
     - [Reto 2: Repositorios de GitHub](./Reto-02/Readme.md)
@@ -149,6 +151,8 @@ fetch('http://example.com/user', {
 ```
 
 #### [Ejemplo 1: NASA API](./Ejemplo-01/Readme.md)
+
+#### [Ejemplo 2: Buscador de GIFs](./Ejemplo-02/Readme.md)
 
 #### [Reto 1: Usuarios de GitHub](./Reto-01/Readme.md)
 
