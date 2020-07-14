@@ -128,7 +128,7 @@ function formatSearchString(search) {
 }
 
 function buildUrl (search) {
-  const API_KEY = 'm7UVETRqlC3ZYuYycgr9W0JKQdVKwjnF';
+  const API_KEY = 'YOUR_API_KEY'; // Provided by GIPHY
   const baseUrl = 'http://api.giphy.com/v1/gifs/search';
 
   return `${baseUrl}?q=${search}&api_key=${API_KEY}&limit=9`;
