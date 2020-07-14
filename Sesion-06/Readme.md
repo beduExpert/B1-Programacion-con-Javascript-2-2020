@@ -32,6 +32,8 @@ Procesar aplicaciones modernas de JavaScript con Webpack para producir uno o má
     
     - [Reto 1: Find your GIF](./Reto-01/Readme.md)
     
+    - [Reto 2: Find your GIF II](./Reto-02/Readme.md)
+    
 ---
 
 ## ES6 Modules
@@ -198,3 +200,5 @@ para ser usado inyectando automáticamente los bundles generados por webpack.
 #### [Ejemplo 3: Webpack Dev Server](./Ejemplo-03/Readme.md)
 
 #### [Reto 1: Find your GIF](./Reto-01/Readme.md)
+
+#### [Reto 2: Find your GIF II](./Reto-02/Readme.md)
