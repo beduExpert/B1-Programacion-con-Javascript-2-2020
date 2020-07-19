@@ -68,4 +68,8 @@ sistema.
 
 ## Jest
 
-...
+Jest es un test runner para JavaScript. Es decir, es una librearía de JavaScript que permite crear, ejecutar y 
+estructurar tests. Es una de las librerías más populares para realizar unit testing debido a su simplicidad y facilidad 
+de integrarse en proyectos que estén usando Babel, TypeScript, Node, React, Angular, Vue, etc.
+
+#### [Ejemplo 1: Empezando con Jest](./Ejemplo-01/Readme.md)
