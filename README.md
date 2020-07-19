@@ -1,16 +1,26 @@
-## Nombre del Módulo: Programacion con Javascript 2 2020
+## Módulo: Programación con JavaScript 2
 
-### OBJETIVO 
+### Objetivo
 
+Dominar las últimas funciones y mejoras de ES6, incluidas;  nuevas palabras clave, funciones de flecha, sintaxis de la 
+clase, promesas y mucho más. Además aprenderás cómo producir código Javascript ES6 compatible con cualquier navegador 
+gracias a babel y  aprende a crear, compactar, optimizar archivos de frontend y como automatizar tareas comunes en el 
+desarrollo de páginas web con webpack.				
 
-### ORGANIZACIÓN DE MÓDULO 
- 
- - [Sesion-01]():
- - [Sesion-02](): 
- - [Sesion-03]():  
- - [Sesion-04]():  
- - [Sesion-05]():  
- - [Sesion-06](): 
- - [Sesion-07]():  
- - [Sesion-08]():  
+### Organización Del Módulo
 
+ - [Sesión 1: Entendiendo el _scope_ y _this_](./Sesion-01)
+
+ - [Sesión 2: Introducción a ECMAScript 6](./Sesion-02)
+
+ - [Sesión 3: ECMAScript 6 - Segunda parte](./Sesion-03)
+
+ - [Sesión 4: Programación Asíncrona](./Sesion-04)
+
+ - [Sesión 5: API](./Sesion-05)
+
+ - [Sesión 6: Webpack](./Sesion-06)
+
+ - [Sesión 7: Babel](./Sesion-07)
+
+ - [Sesión 8: Unit Testing con Jest](./Sesion-08)
