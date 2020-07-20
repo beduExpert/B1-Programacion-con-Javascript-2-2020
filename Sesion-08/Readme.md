@@ -75,3 +75,49 @@ estructurar tests. Es una de las librerías más populares para realizar unit te
 de integrarse en proyectos que estén usando Babel, TypeScript, Node, React, Angular, Vue, etc.
 
 #### [Ejemplo 1: Empezando con Jest](./Ejemplo-01/Readme.md)
+
+---
+
+## Matchers
+
+Los matchers nos permiten evaluar o probar valores de distintas formas.
+
+```javascript
+test('three times two is six', () => {
+  expect(3 * 2).toBe(6)
+})
+```
+
+El matcher `.toBe()` es la forma más sencilla de evaluar una igualdad. 
+
+```javascript
+test('object assignment', () => {
+  const data = {one: 1};
+  data['two'] = 2;
+  expect(data).toEqual({one: 1, two: 2});
+})
+```
+
+Para evaluar el valor de un objeto es mejor utilizar `.toEqual()` ya que revisa de manera recursiva cada campo de un 
+objeto o arreglo.
+
+```javascript
+test('there is "or" in Hello World', () => {
+  expect('Hello World').toMatch(/or/);
+})
+```
+
+Podemos evaluar strings contra expresiones regulares usando `.toMatch()`.
+
+```javascript
+test('object assignment', () => {
+  const numbers = [1, 2, 3, 4, 5];
+  expect(numbers).toContain(3);
+})
+```
+
+Usando el matcher `.toContain()` podemos evaluar si un arreglo o iterable contiene un elemento en particular. 
+Internamente usa el `===`.
+
+> Estos son algunos de los matchers más comunes. Consultar la [documentación](https://jestjs.io/docs/en/expect) para 
+> conocer la lista completa.
