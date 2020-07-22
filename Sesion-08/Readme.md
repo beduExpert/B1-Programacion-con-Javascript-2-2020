@@ -26,6 +26,8 @@ Integrar pruebas unitarias para validar que la aplicación funciona de acuerdo a
     
     - [Ejemplo 2: Jest y Babel](./Ejemplo-02/Readme.md)
     
+    - [Ejemplo 3: Code Coverage](./Ejemplo-03/Readme.md)
+    
 ---
 
 ## ¿Qué es unit testing?
@@ -129,3 +131,5 @@ Internamente usa el `===`.
 > conocer la lista completa.
 
 #### [Ejemplo 2: Jest y Babel](./Ejemplo-02/Readme.md)
+
+#### [Ejemplo 3: Code Coverage](./Ejemplo-03/Readme.md)
