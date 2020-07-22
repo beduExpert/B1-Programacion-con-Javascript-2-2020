@@ -21,6 +21,10 @@ Integrar pruebas unitarias para validar que la aplicación funciona de acuerdo a
 - **[Jest](#jest)**
 
     - [Ejemplo 1: Empezando con Jest](./Ejemplo-01/Readme.md)
+
+- **[Matchers](#matchers)**
+    
+    - [Ejemplo 2: Jest y Babel](./Ejemplo-02/Readme.md)
     
 ---
 
@@ -69,6 +73,8 @@ sistema.
 ---
 
 ## Jest
+
+![Jest](./assets/jest.png)
 
 Jest es un test runner para JavaScript. Es decir, es una librearía de JavaScript que permite crear, ejecutar y 
 estructurar tests. Es una de las librerías más populares para realizar unit testing debido a su simplicidad y facilidad 
@@ -121,3 +127,5 @@ Internamente usa el `===`.
 
 > Estos son algunos de los matchers más comunes. Consultar la [documentación](https://jestjs.io/docs/en/expect) para 
 > conocer la lista completa.
+
+#### [Ejemplo 2: Jest y Babel](./Ejemplo-02/Readme.md)
