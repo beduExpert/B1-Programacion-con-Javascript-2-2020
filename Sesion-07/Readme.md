@@ -22,6 +22,8 @@ Compilar las nuevas características de JavaScript en código compatible con tod
     
     - [Ejemplo 2: Webpack y babel](./Ejemplo-02/Readme.md)
     
+    - [Reto 1: Repo finder](./Reto-01/Readme.md)
+    
 ---
 
 ## Babel
@@ -172,3 +174,5 @@ module.exports = {
 Después de publicarlo en npm se puede usar como cualquier otro preset.
 
 #### [Ejemplo 2: Webpack y babel](./Ejemplo-02/Readme.md)
+
+#### [Reto 1: Repo finder](./Reto-01/Readme.md)
