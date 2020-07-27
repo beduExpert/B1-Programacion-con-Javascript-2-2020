@@ -24,6 +24,8 @@ Compilar las nuevas características de JavaScript en código compatible con tod
     
     - [Reto 1: Repo finder](./Reto-01/Readme.md)
     
+    - [Reto 2: Repo finder II](./Reto-02/Readme.md)
+    
 ---
 
 ## Babel
@@ -176,3 +178,5 @@ Después de publicarlo en npm se puede usar como cualquier otro preset.
 #### [Ejemplo 2: Webpack y babel](./Ejemplo-02/Readme.md)
 
 #### [Reto 1: Repo finder](./Reto-01/Readme.md)
+
+#### [Reto 2: Repo finder II](./Reto-02/Readme.md)
