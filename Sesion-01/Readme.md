@@ -34,7 +34,7 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
 
   - [Reto 1: Custom logger](./Reto-01)
 
-- **[Postwork](./Postwork)**
+- **[Postwork](./Postwork/Readme.md)**
 
 ---
 
@@ -208,4 +208,4 @@ showName(); // Name: Jane Doe
 
 #### [Reto 1: Custom logger](./Reto-01)
 
-#### [Postwork](./Postwork)
+#### [Postwork](./Postwork/Readme.md)
