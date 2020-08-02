@@ -8,7 +8,7 @@
 
 Diferenciar Scope de Context y entender a detalle el Execution Context
 
-#### Desarrollo
+### Desarrollo
 
 Scope, Context y Execution Context son conceptos que muy fácilmente se confunden entre sí por lo que es bastante 
 complejo entender la diferencia y cómo funcionan cuando estamos aprendiendo JavaScript. Ya vimos que _Scope_ se refiere 
@@ -18,7 +18,7 @@ Ahora veamos a detalle cómo funciona el _Execution Context_.
 
 ---
 
-#### Execution Context a detalle
+### Execution Context a detalle
 
 En la sesión vimos al Execution Context como una caja que envuelve variables donde parte de nuestro código es evaluado 
 y ejecutado. Podemos asociar el Execution Context con un objeto que tiene tres propiedades: **Variable Object**, el 
@@ -35,7 +35,7 @@ el código de la función línea por línea.
 
 ---
 
-#### Variable Object
+### Variable Object
 
 ![Variable Object](./assets/variable-object.png)
 
@@ -49,7 +49,7 @@ inicializadas con `undefined`.
 
 ---
 
-#### Scope Chain
+### Scope Chain
 
 ![Scope Chain](./assets/scope-chain.png)
 
@@ -64,7 +64,7 @@ tiene acceso a las variables `a` y `b`.
 
 ---
 
-#### `this` variable
+### `this` variable
 
 ![This Keyword](./assets/this-keyword.png)
 
