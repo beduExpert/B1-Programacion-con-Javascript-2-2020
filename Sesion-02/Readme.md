@@ -35,6 +35,8 @@ Implementar las nuevas características de JavaScript en la creación y asignaci
     - [Ejemplo 3: Object destructuring](./Ejemplo-03/Readme.md)
     
     - [Reto 2: Objetos anidados](./Reto-02/Readme.md)
+    
+- **[Postwork](./Postwork/Readme.md)**
 
 ---
 
@@ -343,3 +345,5 @@ las variables, el valor de esas propiedades es el que se asigna a las variables 
 #### [Ejemplo 3: Object destructuring](./Ejemplo-03/Readme.md)
 
 #### [Reto 2: Objetos anidados](./Reto-02/Readme.md)
+
+#### [Postwork](./Postwork/Readme.md)
