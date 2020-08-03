@@ -6,7 +6,7 @@
 
 ### Objetivos
 
-...
+Diferenciar el uso de arrow functions sobre funciones regulares.
 
 ### Desarrollo
 
