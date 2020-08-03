@@ -148,6 +148,14 @@ complejo, hay que tener cuidado de no sobre escribir elementos. Claro que lo má
 una copia del arreglo pero la idea es resolverlo sin recurrir a estas soluciones.
 
 ```javascript
+function reverseArray(array) {
+  // Code goes here
+}
+
+function reverseArrayInPlace(array) {
+  // Code goes here
+}
+
 console.log(reverseArray(["A", "B", "C"])); // ["C", "B", "A"]
 
 let array = [1, 2, 3, 4, 5];
