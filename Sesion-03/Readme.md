@@ -4,9 +4,9 @@
 
 # Sesión 3: ECMAScript 6 - Segunda parte
 
-## Objetivos
+🎯 **Objetivos:**
 
-Simplificar el código con la nueva sintaxis para crear funciones
++ Simplificar el código con la nueva sintaxis para crear funciones
 
 ---
 
@@ -128,7 +128,7 @@ const logName = name => console.log(`Hello ${name}!`);
 logName('John Doe'); // Hello John Doe!
 ```
 
-#### [Ejemplo 1: Arrow functions y this](./Ejemplo-01/Readme.md)
+#### 🕵 [Ejemplo 1: Arrow functions y this](./Ejemplo-01/Readme.md)
 
 ---
 
@@ -156,7 +156,7 @@ function logMessage(message = 'Hello World') {
 logMessage(); // Hello World
 ```
 
-#### [Ejemplo 2: Calcular total](./Ejemplo-02/Readme.md)
+#### 🕵 [Ejemplo 2: Calcular total](./Ejemplo-02/Readme.md)
 
 ---
 
@@ -190,8 +190,8 @@ elementos de un arreglo, mientras que el segundo crea un arreglo con todos los a
 
 ---
 
-#### [Reto 1: Crear un número de teléfono](./Reto-01/Readme.md)
+#### 💻 [Reto 1: Crear un número de teléfono](./Reto-01/Readme.md)
 
-#### [Reto 2: Encontrar elementos faltantes](./Reto-02/Readme.md)
+#### 💻 [Reto 2: Encontrar elementos faltantes](./Reto-02/Readme.md)
 
-#### [Postwork](./Postwork/Readme.md)
+#### 🛡 [Postwork](./Postwork/Readme.md)
