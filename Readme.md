@@ -2,7 +2,7 @@
 
 ![](https://i.ytimg.com/vi/s7ykocU8Nog/maxresdefault.jpg)
 
-## 🎯 Objetivo:
+## 🎯 Objetivos:
 
 + Dominar las últimas funciones y mejoras de ES6, incluidas;  nuevas palabras clave, **funciones de flecha**, sintaxis de la 
 **clase**, **promesas** y mucho más.
