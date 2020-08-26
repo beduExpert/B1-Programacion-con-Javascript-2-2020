@@ -4,13 +4,13 @@
 
 # Sesión 2: Introducción a ECMAScript 6
 
-## Objetivos
+🎯 **Objetivos:**
 
-Implementar las nuevas características de JavaScript en la creación y asignación de variables
++ Implementar las nuevas características de JavaScript en la creación y asignación de variables
 
 ---
 
-## Tabla de Contenidos
+## 💻 Tabla de Contenidos
 
 - **[¿Qué es ECMAScript 6?](#qué-es-ecmascript-6)**
 
@@ -157,7 +157,7 @@ const msg = `Hello World!`;
 console.log(msg); // Hello World
 ```
 
-#### [Ejemplo 1: Strings en ES6](./Ejemplo-01/Readme.md)
+#### 🕵 [Ejemplo 1: Strings en ES6](./Ejemplo-01/Readme.md)
 
 ---
 
@@ -193,7 +193,7 @@ console.log(copyOfBook);
 // { author: "Marijn Haverbeke", title: "Eloquent JavaScript", year: 2018 }
 ```
 
-#### [Ejemplo 2: Copiar arreglos y objetos](./Ejemplo-02/Readme.md)
+#### 🕵 [Ejemplo 2: Copiar arreglos y objetos](./Ejemplo-02/Readme.md)
 
 ### Unir iterables
 
@@ -308,7 +308,7 @@ console.log(yellow); // Yellow
 En este ejemplo estamos creando 3 variables (`red`, `blue` y `yellow`) y asignando los valores del arreglo `colors`.
 Esta asignación se hace en base al index del arreglo.
 
-#### [Reto 1: Intercambiar variables](./Reto-01/Readme.md)
+#### 💻 [Reto 1: Intercambiar variables](./Reto-01/Readme.md)
 
 ```javascript
 const person = {
@@ -342,8 +342,8 @@ Las llaves del lado izquierdo del `=` no son un objeto. Esta es la sintaxis de o
 nuevas variables `firstName` y `lastName`, después estamos extrayendo dos propiedades de `person` con el mismo nombre de
 las variables, el valor de esas propiedades es el que se asigna a las variables creadas.
 
-#### [Ejemplo 3: Object destructuring](./Ejemplo-03/Readme.md)
+#### 🕵 [Ejemplo 3: Object destructuring](./Ejemplo-03/Readme.md)
 
-#### [Reto 2: Objetos anidados](./Reto-02/Readme.md)
+#### 💻 [Reto 2: Objetos anidados](./Reto-02/Readme.md)
 
-#### [Postwork](./Postwork/Readme.md)
+#### 🛡 [Postwork](./Postwork/Readme.md)
