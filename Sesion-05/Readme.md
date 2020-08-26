@@ -4,13 +4,13 @@
 
 # Sesión 5: API
 
-## Objetivos
+🎯 **Objetivos:**
 
 Consumir recursos externos de una API mediante peticiones HTTP
 
 ---
 
-## Tabla de Contenidos
+## 💻 Tabla de Contenidos
 
 - **[API](#api)**
 
@@ -152,14 +152,14 @@ fetch('http://example.com/user', {
   })
 ```
 
-#### [Ejemplo 1: NASA API](./Ejemplo-01/Readme.md)
+#### 🕵 [Ejemplo 1: NASA API](./Ejemplo-01/Readme.md)
 
-#### [Ejemplo 2: Buscador de GIFs](./Ejemplo-02/Readme.md)
+#### 🕵 [Ejemplo 2: Buscador de GIFs](./Ejemplo-02/Readme.md)
 
-#### [Reto 1: Usuarios de GitHub](./Reto-01/Readme.md)
+#### 💻 [Reto 1: Usuarios de GitHub](./Reto-01/Readme.md)
 
-#### [Reto 2: Repositorios de GitHub](./Reto-02/Readme.md)
+#### 💻 [Reto 2: Repositorios de GitHub](./Reto-02/Readme.md)
 
-#### [Reto 3: Resultados dinámicos](./Reto-03/Readme.md)
+#### 💻 [Reto 3: Resultados dinámicos](./Reto-03/Readme.md)
 
-#### [Postwork](./Postwork/Readme.md)
+#### 🛡 [Postwork](./Postwork/Readme.md)
