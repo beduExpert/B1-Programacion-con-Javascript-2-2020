@@ -24,7 +24,7 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
 
 - **[¿Cuál es el valor de `this`?](#cuál-es-el-valor-de-this)**
 
-  - 🕵  [Ejemplo 2: `this` como método](./Ejemplo-02)
+  - [Ejemplo 2: `this` como método](./Ejemplo-02)
 
 - **[`this` en nuevas instancias](#this-en-nuevas-instancias)**
 
@@ -128,7 +128,7 @@ Mientras que en un ambiente de Node.js `this` hace referencia al objeto `global`
 
 ![This in Node.js](./assets/this-node.png)
 
-#### [Ejemplo 2: `this` como método](./Ejemplo-02)
+#### 🕵 [Ejemplo 2: `this` como método](./Ejemplo-02)
 
 ---
 
