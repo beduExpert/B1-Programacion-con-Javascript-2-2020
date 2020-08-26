@@ -1,4 +1,6 @@
-## Módulo: Programación con JavaScript 2
+# Programación con JavaScript II
+
+![](https://i.ytimg.com/vi/dND_2WHWszI/maxresdefault.jpg)
 
 ## 🎯 Objetivo:
 
