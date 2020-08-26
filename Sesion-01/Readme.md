@@ -4,13 +4,13 @@
 
 # Sesión 1: Entendiendo el _scope_ y _this_
 
-## Objetivos
+🎯 **Objetivos:**
 
 Diferenciar scope global de local y cómo this cambia dependiendo del execution context
 
 ---
 
-## Tabla de Contenidos
+## 💻 Tabla de Contenidos
 
 - **[¿Qué es scope?](#qué-es-scope)**
 
@@ -24,7 +24,7 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
 
 - **[¿Cuál es el valor de `this`?](#cuál-es-el-valor-de-this)**
 
-  - [Ejemplo 2: `this` como método](./Ejemplo-02)
+  - 🕵  [Ejemplo 2: `this` como método](./Ejemplo-02)
 
 - **[`this` en nuevas instancias](#this-en-nuevas-instancias)**
 
@@ -92,7 +92,7 @@ Sentencias de control de flujo y bucles como `if/else`, `switch`, `for` o `while
 scope como lo hacen las funciones. Cualquier variable declarada dentro de estos bloques tendrá el mismo 
 scope donde se declaró la sentencia.
 
-#### [Ejemplo 1: Sentencias de bloque](./Ejemplo-01)
+#### 🕵  [Ejemplo 1: Sentencias de bloque](./Ejemplo-01)
 
 ---
 
@@ -204,7 +204,7 @@ var showName = john.logName.bind(jane);
 showName(); // Name: Jane Doe
 ```
 
-#### [Ejemplo 3: Usando `call`](./Ejemplo-03)
+#### 🕵 [Ejemplo 3: Usando `call`](./Ejemplo-03)
 
 #### [Reto 1: Custom logger](./Reto-01)
 
