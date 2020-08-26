@@ -3,7 +3,8 @@
 ## 🎯 Objetivo:
 
 + Dominar las últimas funciones y mejoras de ES6, incluidas;  nuevas palabras clave, **funciones de flecha**, sintaxis de la 
-**clase**, **promesas** y mucho más. Además aprenderás cómo producir código Javascript ES6 compatible con cualquier navegador 
+**clase**, **promesas** y mucho más.
++ Además aprenderás cómo producir código Javascript ES6 compatible con cualquier navegador 
 gracias a **babel** y  aprende a crear, compactar, optimizar archivos de frontend y como automatizar tareas comunes en el 
 desarrollo de páginas web con **webpack**.				
 
