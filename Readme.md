@@ -1,6 +1,7 @@
 # Programación con JavaScript II
 
 <img src="https://i.ytimg.com/vi/dND_2WHWszI/maxresdefault.jpg" width="400px">
+
 ## 🎯 Objetivo:
 
 + Dominar las últimas funciones y mejoras de ES6, incluidas;  nuevas palabras clave, **funciones de flecha**, sintaxis de la 
@@ -25,4 +26,4 @@ desarrollo de páginas web con **webpack**.
 
  - [`Sesión 7: Babel`](./Sesion-07)
 
- - [`Sesión 8: Unit Testing con Jest`](./Sesion-
+ - [`Sesión 8: Unit Testing con Jest`](./Sesion-08)
