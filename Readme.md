@@ -1,6 +1,6 @@
 # Programación con JavaScript II
 
-![](https://programacion.net/files/article/20160727120738_javascript.png)
+![](https://i.ytimg.com/vi/s7ykocU8Nog/maxresdefault.jpg)
 
 ## 🎯 Objetivo:
 
