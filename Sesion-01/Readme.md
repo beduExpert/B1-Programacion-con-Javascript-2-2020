@@ -206,6 +206,6 @@ showName(); // Name: Jane Doe
 
 #### 🕵 [Ejemplo 3: Usando `call`](./Ejemplo-03)
 
-#### [Reto 1: Custom logger](./Reto-01)
+#### 💻 [Reto 1: Custom logger](./Reto-01)
 
-#### [Postwork](./Postwork/Readme.md)
+#### 🛡 [Postwork](./Postwork/Readme.md)
