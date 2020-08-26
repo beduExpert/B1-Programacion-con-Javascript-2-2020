@@ -10,7 +10,7 @@
 
 ---
 
-## Tabla de Contenidos
+## 💻 Tabla de Contenidos
 
 - **[Arrow functions](#arrow-functions)**
 
