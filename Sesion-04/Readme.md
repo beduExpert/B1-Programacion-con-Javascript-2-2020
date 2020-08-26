@@ -4,13 +4,13 @@
 
 # Sesión 4: Programación Asíncrona
 
-## Objetivos
+🎯 **Objetivos:**
 
 Realizar operaciones de manera asíncrona y distinguir entre las distintas opciones que proporciona JS
 
 ---
 
-## Tabla de Contenidos
+## 💻 Tabla de Contenidos
 
 - **[Asincronía](#asincronía)**
 
@@ -85,7 +85,7 @@ setTimeout(callback, 0);
 console.log('Hello');
 ``` 
 
-#### [Ejemplo 1: Callback hell](./Ejemplo-01/Readme.md)
+#### 🕵 [Ejemplo 1: Callback hell](./Ejemplo-01/Readme.md)
 
 ---
 
@@ -147,9 +147,9 @@ foo()
   .catch(error => console.log(error)); // error produced in foo()
 ```
 
-#### [Ejemplo 2: Cadena de promesas](./Ejemplo-02/Readme.md)
+#### 🕵 [Ejemplo 2: Cadena de promesas](./Ejemplo-02/Readme.md)
 
-#### [Reto 1: Creando Promise.all](./Reto-01/Readme.md)
+#### 💻 [Reto 1: Creando Promise.all](./Reto-01/Readme.md)
 
 ---
 
@@ -220,6 +220,6 @@ async function bar() {
 bar()
 ```
 
-#### [Reto 2:  Llamar función async](./Reto-02/Readme.md)
+#### 💻 [Reto 2:  Llamar función async](./Reto-02/Readme.md)
 
-#### [Postwork](./Postwork/Readme.md)
+#### 🛡 [Postwork](./Postwork/Readme.md)
