@@ -1,6 +1,6 @@
 # Programación con JavaScript II
 
-<img src="https://i.ytimg.com/vi/dND_2WHWszI/maxresdefault.jpg" width="400px">
+![](https://programacion.net/files/article/20160727120738_javascript.png)
 
 ## 🎯 Objetivo:
 
