@@ -135,7 +135,7 @@ A diferencia del `entry`, cuando estamos definiendo la ruta del `output` necesit
 `path` que es un módulo de Node.js. El método `path.resolve()` genera una ruta con los argumentos que le pasamos, 
 `__dirname` es una variable cuyo valor es la ruta absoluta, `dist` es la carpeta donde queremos colocar el bundle final.
 
-#### [Ejemplo 1: Instalación y configuración](./Ejemplo-01/Readme.md)
+#### 🕵 [Ejemplo 1: Instalación y configuración](./Ejemplo-01/Readme.md)
 
 ### Loaders
 
