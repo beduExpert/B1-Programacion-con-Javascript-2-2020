@@ -4,13 +4,13 @@
 
 # Sesión 8: Unit Testing con Jest
 
-## Objetivos
+🎯 **Objetivos:**
 
 Integrar pruebas unitarias para validar que la aplicación funciona de acuerdo a cómo se diseñó
 
 ---
 
-## Tabla de Contenidos
+## 💻 Tabla de Contenidos
 
 - **[¿Qué es unit testing?](#qué-es-unit-testing)**
 
@@ -88,7 +88,7 @@ Jest es un test runner para JavaScript. Es decir, es una librearía de JavaScrip
 estructurar tests. Es una de las librerías más populares para realizar unit testing debido a su simplicidad y facilidad 
 de integrarse en proyectos que estén usando Babel, TypeScript, Node, React, Angular, Vue, etc.
 
-#### [Ejemplo 1: Empezando con Jest](./Ejemplo-01/Readme.md)
+#### 🕵 [Ejemplo 1: Empezando con Jest](./Ejemplo-01/Readme.md)
 
 ---
 
@@ -136,12 +136,12 @@ Internamente usa el `===`.
 > Estos son algunos de los matchers más comunes. Consultar la [documentación](https://jestjs.io/docs/en/expect) para 
 > conocer la lista completa.
 
-#### [Ejemplo 2: Jest y Babel](./Ejemplo-02/Readme.md)
+#### 🕵 [Ejemplo 2: Jest y Babel](./Ejemplo-02/Readme.md)
 
-#### [Ejemplo 3: Code Coverage](./Ejemplo-03/Readme.md)
+#### 🕵 [Ejemplo 3: Code Coverage](./Ejemplo-03/Readme.md)
 
-#### [Reto 1: Orden ascendente](./Reto-01/Readme.md)
+#### 💻 [Reto 1: Orden ascendente](./Reto-01/Readme.md)
 
-#### [Reto 2: Siguiente número mayor](./Reto-02/Readme.md)
+#### 💻 [Reto 2: Siguiente número mayor](./Reto-02/Readme.md)
 
-#### [Postwork](./Postwork/Readme.md)
+#### 🛡 [Postwork](./Postwork/Readme.md)
