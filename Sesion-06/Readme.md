@@ -4,13 +4,13 @@
 
 # Sesión 6: Webpack
 
-## Objetivos
+🎯 **Objetivos:**
 
 Procesar aplicaciones modernas de JavaScript con Webpack para producir uno o más bundles
 
 ---
 
-## Tabla de Contenidos
+## 💻 Tabla de Contenidos
 
 - **[ES6 Modules](#es6-modules)**
 
@@ -197,12 +197,12 @@ para ser usado inyectando automáticamente los bundles generados por webpack.
 
 > Los plugins deben ser instalados previamente: `npm install --save-dev html-webpack-plugin`
 
-#### [Ejemplo 2: Webpack y CSS](./Ejemplo-02/Readme.md)
+#### 🕵 [Ejemplo 2: Webpack y CSS](./Ejemplo-02/Readme.md)
 
-#### [Ejemplo 3: Webpack Dev Server](./Ejemplo-03/Readme.md)
+#### 🕵 [Ejemplo 3: Webpack Dev Server](./Ejemplo-03/Readme.md)
 
-#### [Reto 1: Find your GIF](./Reto-01/Readme.md)
+#### 💻 [Reto 1: Find your GIF](./Reto-01/Readme.md)
 
-#### [Reto 2: Find your GIF II](./Reto-02/Readme.md)
+#### 💻 [Reto 2: Find your GIF II](./Reto-02/Readme.md)
 
-#### [Postwork](./Postwork/Readme.md)
+#### 🛡 [Postwork](./Postwork/Readme.md)
